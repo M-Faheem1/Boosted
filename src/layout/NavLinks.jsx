@@ -15,9 +15,9 @@ function NavLinks() {
 				<ListItem key={text} disablePadding>
 					<ListItemButton
 						sx={{
-							fontSize:'16px',
-							fontWeight:'400',
-							lineHeight:'24px',
+							fontSize: '16px',
+							fontWeight: '400',
+							lineHeight: '24px',
 							padding: '12px 16px',
 							'&:focus': {
 								backgroundColor: '#5532FA',
