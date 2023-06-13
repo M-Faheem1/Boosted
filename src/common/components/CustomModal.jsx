@@ -43,7 +43,6 @@ export default function TransitionsModal() {
 							border: '2px solid #000',
 							padding: '20px 40px',
 							textAlign: 'center',
-							border: 'transparent',
 							borderRadius: '4px',
 							height: '400px',
 							'&:focus-visible': {

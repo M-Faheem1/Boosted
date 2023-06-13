@@ -25,7 +25,7 @@ const rows = [
 	createData('Max', 'booosted@gamil.com', '2 minutes ago', 156),
 ];
 
-export default function DashboardTable() {
+export default function ChatBotsListTable() {
 	return (
 		<TableContainer
 			sx={{

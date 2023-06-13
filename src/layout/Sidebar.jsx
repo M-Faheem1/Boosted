@@ -1,18 +1,14 @@
 import * as React from 'react';
-import Box from '@mui/material/Box';
 import Drawer from '@mui/material/Drawer';
 import Toolbar from '@mui/material/Toolbar';
 import { Divider, Grid, Typography } from '@mui/material';
 import SvgLogOutSvg from '../assets/svgs/components/log-out-svg';
-import SvgProfilePicSvg from '../assets/svgs/components/profile-pic-svg';
-import DashboardTable from '../pages/Dashboard/DashboardTable';
 import NavLinks from './NavLinks';
 
 const drawerWidth = 248;
 
-export default function Header() {
+export default function Sidebar() {
 	return (
-		<Box sx={{ display: 'flex', height: '100vh', width: '100%' }}>
 			<Drawer
 				sx={{
 					width: drawerWidth,
@@ -64,28 +60,5 @@ export default function Header() {
 					</Grid>
 				</Grid>
 			</Drawer>
-			<Box
-				component='main'
-				sx={{
-					width: '100%',
-					padding: '36px 60px 36px 52px',
-				}}
-			>
-				<Grid
-					sx={{
-						display: 'flex',
-						justifyContent: 'flex-end',
-						alignItems: 'center',
-						gap: '16px',
-					}}
-				>
-					<SvgProfilePicSvg /> <span>Alex Higgins</span>{' '}
-				</Grid>
-				<Typography sx={{ fontSize: '36px', fontWeight: '700' }} variant='h1'>
-					My Chatbots
-				</Typography>
-				<DashboardTable />
-			</Box>
-		</Box>
 	);
 }
