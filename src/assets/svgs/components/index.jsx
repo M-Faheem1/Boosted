@@ -1,3 +1,4 @@
+export { default as CreateChatBotsSvg } from "./create-chat-bots-svg";
 export { default as ProfilePicSvg } from "./profile-pic-svg";
 export { default as AddSvg } from "./add-svg";
 export { default as AvatarSvg } from "./avatar-svg";
@@ -7,3 +8,4 @@ export { default as DeleteSvg } from "./delete-svg";
 export { default as LogOutSvg } from "./log-out-svg";
 export { default as MembershipSvg } from "./membership-svg";
 export { default as ModalCloseSvg } from "./modal-close-svg";
+export { default as PreviousPageSvg } from "./previous-page-svg";
