@@ -17,7 +17,7 @@ function CreateChatBot() {
 				</Typography>
 			</Grid>
 			<Grid className='input-wrapper' sx={{ display: 'flex', gap: '24px', marginTop: '56px' }}>
-				<CustomizedInputsStyleOverrides />
+				<CustomizedInputsStyleOverrides label={'Enter Website URL'} placeholder={'Add website URL'}/>
 				<CustomButton
 					text={'fetch links'}
 					style={{

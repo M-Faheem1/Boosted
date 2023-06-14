@@ -28,7 +28,7 @@ const customTheme = (outerTheme) =>
 			MuiOutlinedInput: {
 				styleOverrides: {
 					notchedOutline: {
-						borderColor: '#5532FA',
+						borderColor: '#79747E',
 					},
 					root: {
 						[`&:hover .${outlinedInputClasses.notchedOutline}`]: {
@@ -46,7 +46,7 @@ const customTheme = (outerTheme) =>
 		},
 	});
 
-export default function CustomizedInputsStyleOverrides() {
+export default function CustomizedInputsStyleOverrides({ label, placeholder, style }) {
 	const outerTheme = useTheme();
 
 	return (
@@ -57,7 +57,7 @@ export default function CustomizedInputsStyleOverrides() {
 			}}
 		>
 			<ThemeProvider theme={customTheme(outerTheme)}>
-				<TextField label='Add website URL' variant='outlined' sx={{}} />
+				<TextField label={label} variant='outlined' placeholder={placeholder} sx={{}} style={style} />
 			</ThemeProvider>
 		</Box>
 	);

@@ -5,6 +5,7 @@ import MyChatBots from '../MyChatBots/MyChatBots';
 import SvgProfilePicSvg from '../../assets/svgs/components/profile-pic-svg';
 import { Grid } from '@mui/material';
 import CreateChatBot from '../CreateChatBot/CreateChatBot';
+import BasicTabs from '../ChatbotProfile/ChatbotProfile';
 
 export default function Dashboard() {
 	return (
@@ -28,7 +29,8 @@ export default function Dashboard() {
 					<SvgProfilePicSvg /> <span>Alex Higgins</span>{' '}
 				</Grid>
 				{/* <MyChatBots /> */}
-				<CreateChatBot />
+				{/* <CreateChatBot /> */}
+				<BasicTabs />
 			</Box>
 		</Box>
 	);
