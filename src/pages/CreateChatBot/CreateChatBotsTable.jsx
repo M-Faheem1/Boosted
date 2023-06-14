@@ -48,7 +48,6 @@ export default function CraeteChatBotsTable() {
 				hideFooterPagination
 				checkboxSelection
 				disableColumnMenu
-				className='testtttt'
 				sx={{
 					boxShadow: 'none',
 					border: 'none',
