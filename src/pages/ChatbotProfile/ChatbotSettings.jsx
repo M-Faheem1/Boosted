@@ -1,14 +1,13 @@
-import { Box, FormControl, FormHelperText, Grid, InputLabel, Typography } from '@mui/material';
+import { Box, FormControl, Grid, Typography } from '@mui/material';
 import * as React from 'react';
 import CustomizedInputsStyleOverrides from '../../common/components/InputField';
 import RowRadioButtonsGroup from '../../common/components/CustomRadio';
 import CustomButton from '../../common/components/CustomButton';
-import { fontSize } from '@mui/system';
 
 function ChatbotSettings() {
 	return (
 		<Box sx={{ maxWidth: '528px' }}>
-			<Grid sx={{ marginTop:'40px !important'}}>
+			<Grid sx={{ marginTop: '40px !important' }}>
 				<Typography
 					sx={{
 						fontWeight: 500,
@@ -83,11 +82,11 @@ function ChatbotSettings() {
 								right: '10px',
 								top: '50%',
 								transform: 'translateY(-50%)',
-                padding:'3px 22px',
-                fontSize:'15px',
-                fontWeight:'500',
-                lineHeight:'26px',
-                width:'104px',
+								padding: '3px 22px',
+								fontSize: '15px',
+								fontWeight: '500',
+								lineHeight: '26px',
+								width: '104px',
 							}}
 						/>
 					</FormControl>

@@ -17,7 +17,7 @@ function CreateChatBot() {
 				</Typography>
 			</Grid>
 			<Grid className='input-wrapper' sx={{ display: 'flex', gap: '24px', marginTop: '56px' }}>
-				<CustomizedInputsStyleOverrides label={'Enter Website URL'} placeholder={'Add website URL'}/>
+				<CustomizedInputsStyleOverrides label={'Enter Website URL'} placeholder={'Add website URL'} />
 				<CustomButton
 					text={'fetch links'}
 					style={{
@@ -55,11 +55,15 @@ function CreateChatBot() {
         />
 			</Grid> */}
 			<CraeteChatBotsTable />
-			<Grid sx={{display:'flex', justifyContent:'flex-end',alignItems:'center', gap:'24px', marginTop:'23px'}} >
-				<Typography variant='body1' sx={{fontSize:'16px',fontWeight:'400',lineHeight:'18px', color:'#676767'}}>You have used <Typography variant='span' sx={{color:'#5532FA',fontSize:'18px',fontWeight:'700',lineHeight:'20px',}}>38,925</Typography> character counts</Typography>
-        <CustomButton 
-        text={'Create chatbot'}
-        />
+			<Grid sx={{ display: 'flex', justifyContent: 'flex-end', alignItems: 'center', gap: '24px', marginTop: '23px' }}>
+				<Typography variant='body1' sx={{ fontSize: '16px', fontWeight: '400', lineHeight: '18px', color: '#676767' }}>
+					You have used{' '}
+					<Typography variant='span' sx={{ color: '#5532FA', fontSize: '18px', fontWeight: '700', lineHeight: '20px' }}>
+						38,925
+					</Typography>{' '}
+					character counts
+				</Typography>
+				<CustomButton text={'Create chatbot'} />
 			</Grid>
 		</Grid>
 	);
