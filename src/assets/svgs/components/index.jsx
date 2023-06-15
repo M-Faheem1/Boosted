@@ -1,4 +1,5 @@
 export { default as CreateChatBotsSvg } from "./create-chat-bots-svg";
+export { default as GoogleLogo } from "./google-logo";
 export { default as ProfilePicSvg } from "./profile-pic-svg";
 export { default as AddSvg } from "./add-svg";
 export { default as AvatarSvg } from "./avatar-svg";
