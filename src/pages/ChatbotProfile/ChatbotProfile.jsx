@@ -6,11 +6,10 @@ import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import SvgPreviousPageSvg from '../../assets/svgs/components/previous-page-svg';
 import { Grid } from '@mui/material';
-import CraeteChatBotsTable from '../CreateChatBot/CreateChatBotsTable';
 import ChatbotSettings from './ChatbotSettings';
-import { color, fontWeight } from '@mui/system';
 import RelevantLinks from './RelevantLinks';
 import EmbedChatbot from './EmbedChatbot';
+import Conversation from './Conversation';
 
 function TabPanel(props) {
 	const { children, value, index, ...other } = props;
@@ -54,10 +53,14 @@ export default function BasicTabs() {
 
 	return (
 		<Box sx={{ width: '100%' }}>
-			<Grid sx={{'.tabpanel .MuiBox-root': {
-        padding:0,
-      }}}>
-				<Grid sx={{ display: 'flex', alignItems: 'center', gap: '31px',}}>
+			<Grid
+				sx={{
+					'.tabpanel .MuiBox-root': {
+						padding: 0,
+					},
+				}}
+			>
+				<Grid sx={{ display: 'flex', alignItems: 'center', gap: '31px' }}>
 					<SvgPreviousPageSvg />
 					<Typography sx={{ fontSize: '36px', fontWeight: '700', lineHeight: '54px' }} variant='h1'>
 						COGENTLABS.CO
@@ -68,13 +71,23 @@ export default function BasicTabs() {
 						borderBottom: 1,
 						borderColor: 'divider',
 						marginTop: '55px',
-						' .Mui-selected ': { color: '#000000 !important', outline:'none' },
+						width: 'fit-content',
+						' .Mui-selected ': { color: '#000000 !important', outline: 'none' },
 						'.MuiTab-textColorPrimary': { color: '#49454F' },
-            
 					}}
 				>
-					<Tabs value={value} onChange={handleChange} aria-label='basic tabs example'>
+					<Tabs
+						value={value}
+						onChange={handleChange}
+						aria-label='basic tabs example'
+						sx={{
+							'.MuiTabs-indicator': {
+								backgroundColor: '#5532FA !important',
+							},
+						}}
+					>
 						<Tab
+							disableRipple
 							label='Settings'
 							{...a11yProps(0)}
 							sx={{
@@ -83,25 +96,28 @@ export default function BasicTabs() {
 								lineHeight: '20px',
 							}}
 						/>
-						<Tab label='Relevant Links' {...a11yProps(1)} />
-						<Tab label='Refresh Website Content' {...a11yProps(2)} />
-						<Tab label='Embed Chatbot' {...a11yProps(3)} />
-						<Tab label='View Conversation' {...a11yProps(4)} />
+						<Tab disableRipple label='Relevant Links' {...a11yProps(1)} />
+						<Tab disableRipple label='Refresh Website Content' {...a11yProps(2)} />
+						<Tab disableRipple label='Embed Chatbot' {...a11yProps(3)} />
+						<Tab disableRipple label='View Conversation' {...a11yProps(4)} />
+						<Tab disableRipple label='Chat' {...a11yProps(5)} />
 					</Tabs>
 				</Box>
-				<TabPanel className='tabpanel' value={value} index={0} sx={{
-        }}>
+				<TabPanel className='tabpanel' value={value} index={0} sx={{}}>
 					<ChatbotSettings />
 				</TabPanel>
 				<TabPanel className='tabpanel' value={value} index={1}>
-        <RelevantLinks />
+					<RelevantLinks />
 				</TabPanel>
 				<TabPanel className='tabpanel' value={value} index={2}></TabPanel>
 				<TabPanel value={value} index={3}>
 					<EmbedChatbot />
 				</TabPanel>
 				<TabPanel className='tabpanel' value={value} index={4}>
-					Item Five
+					<Conversation />
+				</TabPanel>
+				<TabPanel className='tabpanel' value={value} index={5}>
+					<Conversation />
 				</TabPanel>
 			</Grid>
 		</Box>

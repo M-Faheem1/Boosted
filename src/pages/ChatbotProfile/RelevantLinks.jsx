@@ -8,9 +8,9 @@ function RelevantLinks() {
 	return (
 		<Box>
 			<CraeteChatBotsTable />
-      <Grid sx={{display:'flex', justifyContent:'flex-end', mt:3}}>
-			<CustomButton text={'Save changes'} />
-      </Grid>
+			<Grid sx={{ display: 'flex', justifyContent: 'flex-end', mt: 3 }}>
+				<CustomButton text={'Save changes'} />
+			</Grid>
 		</Box>
 	);
 }

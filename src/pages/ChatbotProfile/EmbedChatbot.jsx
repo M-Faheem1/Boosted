@@ -24,37 +24,28 @@ import { CopyToClipboard } from 'react-copy-to-clipboard';
 import { Button, TextField, Box } from '@mui/material';
 
 function EmbedChatbot() {
-  const [text, setText] = useState('');
-  const [isCopied, setIsCopied] = useState(false);
+	const [text, setText] = useState('');
+	const [isCopied, setIsCopied] = useState(false);
 
-  const handleTextChange = (event) => {
-    setText(event.target.value);
-    setIsCopied(false);
-  };
+	const handleTextChange = (event) => {
+		setText(event.target.value);
+		setIsCopied(false);
+	};
 
-  const handleCopy = () => {
-    setIsCopied(true);
-  };
+	const handleCopy = () => {
+		setIsCopied(true);
+	};
 
-  return (
-    <Box>
-      <TextField
-        multiline
-        rows={4}
-        variant="outlined"
-        value={text}
-        onChange={handleTextChange}
-        label="Enter text"
-      />
-      <Box mt={2}>
-        <CopyToClipboard text={text} onCopy={handleCopy}>
-          <Button variant="contained">
-            {isCopied ? 'Copied!' : 'Copy to Clipboard'}
-          </Button>
-        </CopyToClipboard>
-      </Box>
-    </Box>
-  );
+	return (
+		<Box>
+			<TextField multiline rows={4} variant='outlined' value={text} onChange={handleTextChange} label='Enter text' />
+			<Box mt={2}>
+				<CopyToClipboard text={text} onCopy={handleCopy}>
+					<Button variant='contained'>{isCopied ? 'Copied!' : 'Copy to Clipboard'}</Button>
+				</CopyToClipboard>
+			</Box>
+		</Box>
+	);
 }
 
 export default EmbedChatbot;

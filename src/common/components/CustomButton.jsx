@@ -6,6 +6,7 @@ export default function CustomButton({ text, Icon, style }) {
 	return (
 		<Stack direction='row' spacing={2}>
 			<Button
+				disableRipple
 				style={style}
 				sx={{
 					backgroundColor: '#5532FA',
