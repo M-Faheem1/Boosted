@@ -1,10 +1,13 @@
 export { default as ChatCloseSvg } from "./chat-close-svg";
+export { default as ChatSvg } from "./chat-svg";
 export { default as CreateChatBotsSvg } from "./create-chat-bots-svg";
+export { default as CrossWhiteIconSvg } from "./cross-white-icon-svg";
 export { default as GoogleLogo } from "./google-logo";
 export { default as ProfilePicSvg } from "./profile-pic-svg";
 export { default as AddSvg } from "./add-svg";
 export { default as AvatarSvg } from "./avatar-svg";
 export { default as BotSvg } from "./bot-svg";
+export { default as ChatbotAvtarSvg } from "./chatbot-avtar-svg";
 export { default as ChatbotSvg } from "./chatbot-svg";
 export { default as Copy } from "./copy";
 export { default as DeleteSvg } from "./delete-svg";

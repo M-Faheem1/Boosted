@@ -15,8 +15,8 @@ function ConversationList({ heading }) {
 				boxShadow: 'none',
 				width: '344px !important',
 				border: '1px solid #E1E2FF',
-				borderRight:'none',
-				borderRadius:'20px 0 0 4px !important',
+				borderRight: 'none',
+				borderRadius: '20px 0 0 4px !important',
 				'.MuiListItemButton-root': { padding: 0, '& .active': { backgroundColor: '#F1EFF0' } },
 				'.MuiListItem-padding': { padding: '24px 44px' },
 				'.MuiDivider-root': { borderColor: '#E1E2FF' },
@@ -27,7 +27,7 @@ function ConversationList({ heading }) {
 					sx={{
 						padding: '25px 54px',
 						backgroundColor: '#180B38',
-						borderRadius:'4px 0 0 0'
+						borderRadius: '4px 0 0 0',
 					}}
 				>
 					<Typography
@@ -59,14 +59,14 @@ function ConversationList({ heading }) {
 						},
 						'.MuiListItemText-root': { m: 0 },
 						'&::-webkit-scrollbar': {
-              width: '0', // Set the width of the scrollbar
-            },
-            '&::-webkit-scrollbar-track': {
-              background: 'transparent', // Set the background color of the scrollbar track
-            },
-            '&::-webkit-scrollbar-thumb': {
-              background: 'transparent', // Set the color of the scrollbar thumb
-            },
+							width: '0', // Set the width of the scrollbar
+						},
+						'&::-webkit-scrollbar-track': {
+							background: 'transparent', // Set the background color of the scrollbar track
+						},
+						'&::-webkit-scrollbar-thumb': {
+							background: 'transparent', // Set the color of the scrollbar thumb
+						},
 					}}
 				>
 					<ConversationListItem name={'Suporte ADMIN'} time={'02/08/23'} />

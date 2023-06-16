@@ -3,11 +3,7 @@ import Paper from '@mui/material/Paper';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemText from '@mui/material/ListItemText';
-import Divider from '@mui/material/Divider';
 import { Grid, ListItemButton, ListItemIcon, Typography } from '@mui/material';
-import { Box } from '@mui/system';
-import SvgProfilePicSvg from '../../assets/svgs/components/profile-pic-svg';
-import ConversationList from '../Components/ConversationList';
 
 function ReceiveMessage({ message, time, listItemSvg }) {
 	return (
