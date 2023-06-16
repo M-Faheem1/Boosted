@@ -14,6 +14,9 @@ function ConversationList({ heading }) {
 				display: 'flex',
 				boxShadow: 'none',
 				width: '344px !important',
+				border: '1px solid #E1E2FF',
+				borderRight:'none',
+				borderRadius:'20px 0 0 4px !important',
 				'.MuiListItemButton-root': { padding: 0, '& .active': { backgroundColor: '#F1EFF0' } },
 				'.MuiListItem-padding': { padding: '24px 44px' },
 				'.MuiDivider-root': { borderColor: '#E1E2FF' },
@@ -24,6 +27,7 @@ function ConversationList({ heading }) {
 					sx={{
 						padding: '25px 54px',
 						backgroundColor: '#180B38',
+						borderRadius:'4px 0 0 0'
 					}}
 				>
 					<Typography

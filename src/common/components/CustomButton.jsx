@@ -24,6 +24,7 @@ export default function CustomButton({ text, Icon, style }) {
 					},
 					'&:hover': {
 						borderColor: 'transparent',
+						backgroundColor: '#5532FA',
 					},
 				}}
 				variant='contained'

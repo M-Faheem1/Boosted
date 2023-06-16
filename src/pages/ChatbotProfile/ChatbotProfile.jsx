@@ -8,8 +8,11 @@ import SvgPreviousPageSvg from '../../assets/svgs/components/previous-page-svg';
 import { Grid } from '@mui/material';
 import ChatbotSettings from './ChatbotSettings';
 import RelevantLinks from './RelevantLinks';
-import EmbedChatbot from './EmbedChatbot';
 import Conversation from './Conversation';
+import EmbededChatbox from './EmbededChatbox';
+import ChatSection from '../Components/ChatSection';
+import SvgChatCloseSvg from '../../assets/svgs/components/chat-close-svg';
+import ChatInputMessageField from '../Components/ChatInputMessageField';
 
 function TabPanel(props) {
 	const { children, value, index, ...other } = props;
@@ -111,13 +114,19 @@ export default function BasicTabs() {
 				</TabPanel>
 				<TabPanel className='tabpanel' value={value} index={2}></TabPanel>
 				<TabPanel value={value} index={3}>
-					<EmbedChatbot />
+					<EmbededChatbox />
 				</TabPanel>
 				<TabPanel className='tabpanel' value={value} index={4}>
 					<Conversation />
 				</TabPanel>
 				<TabPanel className='tabpanel' value={value} index={5}>
-					<Conversation />
+					<ChatSection
+						heading={'Chatbot'}
+						chatclosesvg={<SvgChatCloseSvg />}
+						chatInputField={<ChatInputMessageField />}
+						style={{ marginTop: '60px',paddingBottom:'30px' }}
+						listStyle={{ paddingBottom: '44px' }}
+					/>
 				</TabPanel>
 			</Grid>
 		</Box>
