@@ -7,7 +7,7 @@ const Conversation = () => {
 	return (
 		<Box sx={{ marginTop: '40px', display: 'flex', boxSizing: 'border-box' }}>
 			<ConversationList heading={'Chats'} />
-			<ChatSection heading={'Suporte ADMIN'} subHeading={'Online'} />
+			<ChatSection heading={'Suporte ADMIN'} subHeading={'Online'} headingFontWeight='700'/>
 		</Box>
 	);
 };

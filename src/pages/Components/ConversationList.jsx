@@ -48,7 +48,7 @@ function ConversationList({ heading }) {
 						maxWidth: 344,
 						height: '516px',
 						padding: 0,
-						overflowY: 'scroll',
+						overflowY: 'auto',
 						'.MuiListItemText-primary': { fontSize: '14px', fontWeight: 600, lineHeight: '16px' },
 						'.MuiListItemText-secondary': {
 							fontSize: '12px',
@@ -58,6 +58,15 @@ function ConversationList({ heading }) {
 							color: '#A1A1A1',
 						},
 						'.MuiListItemText-root': { m: 0 },
+						'&::-webkit-scrollbar': {
+              width: '0', // Set the width of the scrollbar
+            },
+            '&::-webkit-scrollbar-track': {
+              background: 'transparent', // Set the background color of the scrollbar track
+            },
+            '&::-webkit-scrollbar-thumb': {
+              background: 'transparent', // Set the color of the scrollbar thumb
+            },
 					}}
 				>
 					<ConversationListItem name={'Suporte ADMIN'} time={'02/08/23'} />

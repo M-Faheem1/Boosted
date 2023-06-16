@@ -77,6 +77,12 @@ export default function BasicTabs() {
 						width: 'fit-content',
 						' .Mui-selected ': { color: '#000000 !important', outline: 'none' },
 						'.MuiTab-textColorPrimary': { color: '#49454F' },
+						'& button:focus, button:focus-visible': {
+							outline: 'none',
+						},
+						'& button': {
+							padding: '14px 32px',
+						},
 					}}
 				>
 					<Tabs
@@ -124,7 +130,14 @@ export default function BasicTabs() {
 						heading={'Chatbot'}
 						chatclosesvg={<SvgChatCloseSvg />}
 						chatInputField={<ChatInputMessageField />}
-						style={{ marginTop: '60px',paddingBottom:'30px' }}
+						style={{
+							marginTop: '60px',
+							paddingBottom: '30px',
+							width: '896px',
+							boxSizing: 'border-box',
+						}}
+						headingFontSize='24px'
+						headingFontWeight='500'
 						listStyle={{ paddingBottom: '44px' }}
 					/>
 				</TabPanel>

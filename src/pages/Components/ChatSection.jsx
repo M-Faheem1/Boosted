@@ -5,9 +5,17 @@ import { Grid } from '@mui/material';
 import SvgProfilePicSvg from '../../assets/svgs/components/profile-pic-svg';
 import ReceiveMessage from './ReceiveMessage';
 import SendMessage from './SendMessage';
-import ChatInputMessageField from './ChatInputMessageField';
 
-function ChatSection({ heading, subHeading, chatclosesvg, style, listStyle, chatInputField }) {
+function ChatSection({
+	heading,
+	subHeading,
+	chatclosesvg,
+	style,
+	listStyle,
+	chatInputField,
+	headingFontSize,
+	headingFontWeight,
+}) {
 	return (
 		<Grid sx={{ width: '100%', border: '1px solid #E1E2FF', borderRadius: '4px' }} style={style}>
 			<Grid
@@ -17,11 +25,21 @@ function ChatSection({ heading, subHeading, chatclosesvg, style, listStyle, chat
 					borderBottom: '1px solid #E1E2FF',
 					alignItems: 'center',
 					padding: '23px 24px',
-					'.MuiListItemText-primary': { fontSize: '16px', fontWeight: 700, lineHeight: '18.8px' },
-					'.MuiListItemText-secondary': { fontSize: '12px', fontWeight: 400, lineHeight: '14px', mt: '5px' },
 				}}
 			>
-				<ListItemText primary={heading} secondary={subHeading} sx={{ m: 0 }} />
+				<ListItemText
+					primary={heading}
+					secondary={subHeading}
+					sx={{
+						m: 0,
+						'.MuiListItemText-primary': {
+							fontSize: headingFontSize,
+							fontWeight: headingFontWeight,
+							lineHeight: '18.8px',
+							'.MuiListItemText-secondary': { fontSize: '12px', fontWeight: 400, lineHeight: '14px', mt: '5px' },
+						},
+					}}
+				/>
 				{chatclosesvg}
 			</Grid>
 			<Grid sx={{}}>
@@ -70,6 +88,15 @@ function ChatSection({ heading, subHeading, chatclosesvg, style, listStyle, chat
 						'.MuiListItem-root': { padding: '0 !important' },
 						'.MuiGrid-root .MuiGrid-item': { maxWidth: 'unset !important' },
 						'.MuiListItemText-primary': { fontSize: '12px', fontWeight: 400, lineHeight: '20px' },
+						'&::-webkit-scrollbar': {
+							width: '0', // Set the width of the scrollbar
+						},
+						'&::-webkit-scrollbar-track': {
+							background: 'transparent', // Set the background color of the scrollbar track
+						},
+						'&::-webkit-scrollbar-thumb': {
+							background: 'transparent', // Set the color of the scrollbar thumb
+						},
 					}}
 				>
 					<ReceiveMessage
