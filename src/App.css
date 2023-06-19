@@ -71,20 +71,33 @@
 .chat-bot .bot-popup .bot-chat .bot-body .msgs-scroller .label-wrapper {
   display: flex;
   gap: 8px;
+  margin-left: 40px;
 }
 .chat-bot .bot-popup .bot-chat .bot-body .msgs-scroller .message-wrapper {
   display: flex;
   gap: 8px;
+}
+.chat-bot .bot-popup .bot-chat .bot-body .msgs-scroller .message-sent-wrapper {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.chat-bot .bot-popup .bot-chat .bot-body .msgs-scroller .message-sent-wrapper .display-date,
+.chat-bot .bot-popup .bot-chat .bot-body .msgs-scroller .message-sent-wrapper .display-time {
+  display: none;
+}
+.chat-bot .bot-popup .bot-chat .bot-body .msgs-scroller .message-sent-wrapper .msg-sent:first-of-type .display-date,
+.chat-bot .bot-popup .bot-chat .bot-body .msgs-scroller .message-sent-wrapper .msg-sent:first-of-type .display-time {
+  display: block;
 }
 .chat-bot .bot-popup .bot-chat .bot-body .msgs-scroller .msg-sent {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   justify-content: end;
-  margin-bottom: 6px;
 }
 .chat-bot .bot-popup .bot-chat .bot-body .msgs-scroller .msg-sent p {
   box-sizing: border-box;
+  word-break: break-all;
   padding: 11px 23px;
   border-radius: 4px;
   background: #e7e7e7;
@@ -102,12 +115,29 @@
   letter-spacing: -0.02em;
   color: #8a91a8;
 }
+.chat-bot .bot-popup .bot-chat .bot-body .msgs-scroller .message-receive-wrapper {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.chat-bot .bot-popup .bot-chat .bot-body .msgs-scroller .message-receive-wrapper .svg-wrapper {
+  visibility: hidden;
+}
+.chat-bot .bot-popup .bot-chat .bot-body .msgs-scroller .message-receive-wrapper .msg-receive:last-of-type .svg-wrapper {
+  visibility: visible;
+}
+.chat-bot .bot-popup .bot-chat .bot-body .msgs-scroller .message-receive-wrapper .display-date,
+.chat-bot .bot-popup .bot-chat .bot-body .msgs-scroller .message-receive-wrapper .display-time {
+  display: none;
+}
+.chat-bot .bot-popup .bot-chat .bot-body .msgs-scroller .message-receive-wrapper .msg-receive:first-of-type .display-date,
+.chat-bot .bot-popup .bot-chat .bot-body .msgs-scroller .message-receive-wrapper .msg-receive:first-of-type .display-time {
+  display: block;
+}
 .chat-bot .bot-popup .bot-chat .bot-body .msgs-scroller .msg-receive {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: end;
-  margin-bottom: 6px;
 }
 .chat-bot .bot-popup .bot-chat .bot-body .msgs-scroller .msg-receive p {
   box-sizing: border-box;
@@ -122,6 +152,7 @@
   line-height: 16.2px;
   letter-spacing: -0.02em;
   margin-bottom: 10px;
+  word-break: break-all;
 }
 .chat-bot .bot-popup .bot-chat .bot-body .msgs-scroller .msg-receive label {
   font-size: 12px;
@@ -225,20 +256,33 @@
 .chat-bot .bot-popup .bot-chat .bot-body .msgs-scroller .label-wrapper {
   display: flex;
   gap: 8px;
+  margin-left: 40px;
 }
 .chat-bot .bot-popup .bot-chat .bot-body .msgs-scroller .message-wrapper {
   display: flex;
   gap: 8px;
+}
+.chat-bot .bot-popup .bot-chat .bot-body .msgs-scroller .message-sent-wrapper {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.chat-bot .bot-popup .bot-chat .bot-body .msgs-scroller .message-sent-wrapper .display-date,
+.chat-bot .bot-popup .bot-chat .bot-body .msgs-scroller .message-sent-wrapper .display-time {
+  display: none;
+}
+.chat-bot .bot-popup .bot-chat .bot-body .msgs-scroller .message-sent-wrapper .msg-sent:first-of-type .display-date,
+.chat-bot .bot-popup .bot-chat .bot-body .msgs-scroller .message-sent-wrapper .msg-sent:first-of-type .display-time {
+  display: block;
 }
 .chat-bot .bot-popup .bot-chat .bot-body .msgs-scroller .msg-sent {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   justify-content: end;
-  margin-bottom: 6px;
 }
 .chat-bot .bot-popup .bot-chat .bot-body .msgs-scroller .msg-sent p {
   box-sizing: border-box;
+  word-break: break-all;
   padding: 11px 23px;
   border-radius: 4px;
   background: #e7e7e7;
@@ -256,12 +300,29 @@
   letter-spacing: -0.02em;
   color: #8a91a8;
 }
+.chat-bot .bot-popup .bot-chat .bot-body .msgs-scroller .message-receive-wrapper {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.chat-bot .bot-popup .bot-chat .bot-body .msgs-scroller .message-receive-wrapper .svg-wrapper {
+  visibility: hidden;
+}
+.chat-bot .bot-popup .bot-chat .bot-body .msgs-scroller .message-receive-wrapper .msg-receive:last-of-type .svg-wrapper {
+  visibility: visible;
+}
+.chat-bot .bot-popup .bot-chat .bot-body .msgs-scroller .message-receive-wrapper .display-date,
+.chat-bot .bot-popup .bot-chat .bot-body .msgs-scroller .message-receive-wrapper .display-time {
+  display: none;
+}
+.chat-bot .bot-popup .bot-chat .bot-body .msgs-scroller .message-receive-wrapper .msg-receive:first-of-type .display-date,
+.chat-bot .bot-popup .bot-chat .bot-body .msgs-scroller .message-receive-wrapper .msg-receive:first-of-type .display-time {
+  display: block;
+}
 .chat-bot .bot-popup .bot-chat .bot-body .msgs-scroller .msg-receive {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: end;
-  margin-bottom: 6px;
 }
 .chat-bot .bot-popup .bot-chat .bot-body .msgs-scroller .msg-receive p {
   box-sizing: border-box;
@@ -276,6 +337,7 @@
   line-height: 16.2px;
   letter-spacing: -0.02em;
   margin-bottom: 10px;
+  word-break: break-all;
 }
 .chat-bot .bot-popup .bot-chat .bot-body .msgs-scroller .msg-receive label {
   font-size: 12px;

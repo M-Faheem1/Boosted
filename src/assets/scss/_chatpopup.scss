@@ -57,19 +57,36 @@
 					.label-wrapper {
 						display: flex;
 						gap: 8px;
+						margin-left: 40px;
 					}
 					.message-wrapper {
 						display: flex;
 						gap: 8px;
 					}
+
+					.message-sent-wrapper {
+						display: flex;
+						flex-direction: column-reverse;
+						.display-date,
+						.display-time {
+							display: none;
+						}
+						.msg-sent:first-of-type {
+							.display-date,
+							.display-time {
+								display: block;
+							}
+						}
+					}
+
 					.msg-sent {
 						display: flex;
 						flex-direction: column;
 						align-items: flex-end;
 						justify-content: end;
-						margin-bottom: 6px;
 						p {
 							box-sizing: border-box;
+							word-break: break-all;
 							padding: 11px 23px;
 							border-radius: 4px;
 							background: #e7e7e7;
@@ -88,12 +105,34 @@
 							color: #8a91a8;
 						}
 					}
+					.message-receive-wrapper {
+						display: flex;
+						flex-direction: column-reverse;
+						.svg-wrapper {
+							visibility: hidden;
+						}
+						.msg-receive:last-of-type {
+							.svg-wrapper {
+								visibility: visible;
+							}
+						}
+						.display-date,
+						.display-time {
+							display: none;
+						}
+						.msg-receive:first-of-type {
+							.display-date,
+							.display-time {
+								display: block;
+							}
+						}
+					}
+
 					.msg-receive {
 						display: flex;
 						flex-direction: column;
 						align-items: flex-start;
 						justify-content: end;
-						margin-bottom: 6px;
 
 						p {
 							box-sizing: border-box;
@@ -108,6 +147,7 @@
 							line-height: 16.2px;
 							letter-spacing: -0.02em;
 							margin-bottom: 10px;
+							word-break: break-all;
 						}
 						label {
 							font-size: 12px;
