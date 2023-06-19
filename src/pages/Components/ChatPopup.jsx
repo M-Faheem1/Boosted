@@ -32,58 +32,83 @@ const ChatBot = () => {
 
 						<div className='bot-body'>
 							<div className='msgs-scroller'>
-								<div className='msg-sent'>
-									<p>Yeah sure! get him too.</p>
-									<div className='label-wrapper'>
-										<label>12:29 PM</label>
-										<label>12:29 PM</label>
+								<div className='message-sent-wrapper'>
+									<div className='msg-sent'>
+										<p>Yeah sure! get him too. 1 </p>
+										<div className='label-wrapper'>
+											<label className='display-date'>02/12</label>
+											<label className='display-time'>12:29 PM</label>
+										</div>
 									</div>
 								</div>
 
-								<div className='msg-receive'>
-									<div className='message-wrapper'>
-										<SvgChatbotAvtarSvg />
-										<p>Yeah sure! get him too.</p>
+								<div className='message-receive-wrapper'>
+									<div className='msg-receive'>
+										<div className='message-wrapper'>
+											<div className='svg-wrapper'>
+												<SvgChatbotAvtarSvg />
+											</div>
+											<p>Yeah sure! get him too. 1</p>
+										</div>
+										<div className='label-wrapper'>
+											<label className='display-date'>02/12</label>
+											<label className='display-time'>12:29 PM</label>
+										</div>
 									</div>
-									<div className='label-wrapper'>
-										<label>12:29 PM</label>
-										<label>12:29 PM</label>
+								</div>
+								<div className='message-sent-wrapper'>
+									<div className='msg-sent'>
+										<p>Yeah sure! get him too. 2 </p>
+										<div className='label-wrapper'>
+											<label className='display-date'>02/12</label>
+											<label className='display-time'>12:29 PM</label>
+										</div>
+									</div>
+									<div className='msg-sent'>
+										<p>Yeah sure! get him too. 3</p>
+										<div className='label-wrapper'>
+											<label className='display-date'>02/12</label>
+											<label className='display-time'>12:29 PM</label>
+										</div>
 									</div>
 								</div>
 
-								<div className='msg-sent'>
-									<p>Yeah sure! get him too.</p>
-									<div className='label-wrapper'>
-										<label>12:29 PM</label>
-										<label>12:29 PM</label>
+								<div className='message-receive-wrapper'>
+									<div className='msg-receive'>
+										<div className='message-wrapper'>
+											<div className='svg-wrapper'>
+												<SvgChatbotAvtarSvg />
+											</div>
+											<p>Yeah sure! get him too. 2</p>
+										</div>
+										<div className='label-wrapper'>
+											<label className='display-date'>02/12</label>
+											<label className='display-time'>12:29 PM</label>
+										</div>
 									</div>
-								</div>
-
-								<div className='msg-sent'>
-									<p>Yeah sure! get him too.</p>
-									<div className='label-wrapper'>
-										<label>12:29 PM</label>
-										<label>12:29 PM</label>
+									<div className='msg-receive'>
+										<div className='message-wrapper'>
+											<div className='svg-wrapper'>
+												<SvgChatbotAvtarSvg />
+											</div>
+											<p>Yeah sure! get him too. 3</p>
+										</div>
+										<div className='label-wrapper'>
+											<label className='display-date'>02/12</label>
+											<label className='display-time'>12:29 PM</label>
+										</div>
 									</div>
-								</div>
-								<div className='msg-receive'>
-									<div className='message-wrapper'>
-										<SvgChatbotAvtarSvg />
-										<p>Yeah sure! get him too.</p>
-									</div>
-									<div className='label-wrapper'>
-										<label>12:29 PM</label>
-										<label>12:29 PM</label>
-									</div>
-								</div>
-								<div className='msg-receive'>
-									<div className='message-wrapper'>
-										<SvgChatbotAvtarSvg />
-										<p>Yeah sure! get him too.</p>
-									</div>
-									<div className='label-wrapper'>
-										<label>12:29 PM</label>
-										<label>12:29 PM</label>
+									<div className='msg-receive'>
+										<div className='message-wrapper'>
+											<div className='svg-wrapper'>
+												<SvgChatbotAvtarSvg />
+											</div>
+											<p>Yeah sure! get him too. 4</p>
+										</div>
+										<div className='label-wrapper'>
+											<label className='display-date'>02/12</label>
+											<label className='display-time'>12:29 PM</label>
+										</div>
 									</div>
 								</div>
 							</div>
